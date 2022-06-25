@@ -82,6 +82,7 @@
 					</compilerArgs>
 				</configuration>
 			</plugin>
+			
 			<plugin>
 				<artifactId>maven-surefire-plugin</artifactId>
 				<version>${surefire-plugin.version}</version>
