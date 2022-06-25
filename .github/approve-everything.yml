@@ -1,8 +1,0 @@
-# This policy will always approve every PR.
-
-policy:
-  approval:
-    - no approval necessary
-
-approval_rules:
-  - name: no approval necessary
