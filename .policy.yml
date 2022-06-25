@@ -268,7 +268,7 @@ approval_rules:
     requires:
       # "count" is the number of required approvals. The default is 0, meaning no
       # approval is necessary.
-      count: 2
+      count: 1
 
       # A user must be in the list of users or belong to at least one of the given
       # organizations or teams for their approval to count for this rule.
