@@ -3,6 +3,7 @@ package be.sofico.api.response;
 public class Book {
 
 	// This is a number
+	//
 	public String isbn;
 
 	public String description;
