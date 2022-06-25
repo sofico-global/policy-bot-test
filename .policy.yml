@@ -3,7 +3,6 @@ policy:
     - and:
         - "Config change"
         - "Required reviews"
-
 approval_rules:
   - name: "Config change"
     description: "Reviews are required, there based on certain changes we ask help from code owners"
@@ -92,17 +91,17 @@ approval_rules:
         permissions: [ "admin" ]
   - name: "Required reviews"
     description: "Reviews are required, there based on certain changes we ask help from code owners"
-      if:
-        # "changed_files" is satisfied if any file in the pull request matches any
-        # regular expression in the "paths" list. If the "ignore" list is present,
-        # files in the pull request matching these regular expressions are ignored
-        # by this rule.
-        #
-        # Note: Double-quote strings must escape backslashes while single/plain do not.
-        # See the Notes on YAML Syntax section of this README for more information.
-        changed_files:
-          paths:
-            - "*"
+    if:
+      # "changed_files" is satisfied if any file in the pull request matches any
+      # regular expression in the "paths" list. If the "ignore" list is present,
+      # files in the pull request matching these regular expressions are ignored
+      # by this rule.
+      #
+      # Note: Double-quote strings must escape backslashes while single/plain do not.
+      # See the Notes on YAML Syntax section of this README for more information.
+      changed_files:
+        paths:
+          - "*"
 
       # "options" specifies a set of restrictions on approvals. If the block does not
       # exist, the default values are used.
