@@ -7,9 +7,9 @@ approval_rules:
   - name: "Config change"
     description: "Reviews are required, there based on certain changes we ask help from code owners"
     if:
-    changed_files:
-      paths:
-        - ".github"
+      changed_files:
+        paths:
+          - ".github"
     options:
       # If true, approvals by the author of a pull request are considered when
       # calculating the status. False by default.
@@ -72,23 +72,23 @@ approval_rules:
 
       # "requires" specifies the approval requirements for the rule. If the block
       # does not exist, the rule is automatically approved.
-      requires:
-        # "count" is the number of required approvals. The default is 0, meaning no
-        # approval is necessary.
-        count: 2
+    requires:
+      # "count" is the number of required approvals. The default is 0, meaning no
+      # approval is necessary.
+      count: 2
 
-        # A user must be in the list of users or belong to at least one of the given
-        # organizations or teams for their approval to count for this rule.
-        teams: [ "sofico-mmp-front-end/configuration" ]
+      # A user must be in the list of users or belong to at least one of the given
+      # organizations or teams for their approval to count for this rule.
+      teams: [ "sofico-mmp-front-end/configuration" ]
 
-        # A user must have at least the minimum permission in this list for their
-        # approval to count for this rule. Valid permissions are "admin", "maintain",
-        # "write", "triage", and "read".
-        #
-        # Specifying more than one permission is only useful to control which users
-        # or teams are selected for review requests. See the documentation on review
-        # requests for details.
-        permissions: [ "admin" ]
+      # A user must have at least the minimum permission in this list for their
+      # approval to count for this rule. Valid permissions are "admin", "maintain",
+      # "write", "triage", and "read".
+      #
+      # Specifying more than one permission is only useful to control which users
+      # or teams are selected for review requests. See the documentation on review
+      # requests for details.
+      permissions: [ "admin" ]
   - name: "Required reviews"
     description: "Reviews are required, there based on certain changes we ask help from code owners"
     if:
@@ -167,20 +167,20 @@ approval_rules:
 
       # "requires" specifies the approval requirements for the rule. If the block
       # does not exist, the rule is automatically approved.
-      requires:
-        # "count" is the number of required approvals. The default is 0, meaning no
-        # approval is necessary.
-        count: 2
+    requires:
+      # "count" is the number of required approvals. The default is 0, meaning no
+      # approval is necessary.
+      count: 2
 
-        # A user must be in the list of users or belong to at least one of the given
-        # organizations or teams for their approval to count for this rule.
-        organizations: [ "sofico-global/bothrs" ]
+      # A user must be in the list of users or belong to at least one of the given
+      # organizations or teams for their approval to count for this rule.
+      organizations: [ "sofico-global/bothrs" ]
 
-        # A user must have at least the minimum permission in this list for their
-        # approval to count for this rule. Valid permissions are "admin", "maintain",
-        # "write", "triage", and "read".
-        #
-        # Specifying more than one permission is only useful to control which users
-        # or teams are selected for review requests. See the documentation on review
-        # requests for details.
-        permissions: [ "write" ]
+      # A user must have at least the minimum permission in this list for their
+      # approval to count for this rule. Valid permissions are "admin", "maintain",
+      # "write", "triage", and "read".
+      #
+      # Specifying more than one permission is only useful to control which users
+      # or teams are selected for review requests. See the documentation on review
+      # requests for details.
+      permissions: [ "write" ]
